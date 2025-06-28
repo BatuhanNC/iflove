@@ -103,7 +103,7 @@
             <input type="submit" value="Evet" />
           </div>
           <div class="button_no">
-            <input type="submit" value="Hayır " />
+            <input id="button_no" type="submit" value="Hayır " />
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
       </div>
     </div>
     <script>
-      let button = document.querySelector(".button_no");
+      let button = document.querySelector("#button_no");
       button.addEventListener("mouseover", () => {
         button.style.position = "absolute";
         const maxWidth = window.innerWidth - button.offsetWidth;
